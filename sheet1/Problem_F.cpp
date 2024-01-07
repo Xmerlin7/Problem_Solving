@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    long long n, sum;
-    cin >> n;
-    sum = n * (n + 1) / 2;
-    cout << sum;
+    long long a, b;
+    cin >> a >> b;
+    cout << (a % 10) + (b % 10);
+
     return 0;
 }
