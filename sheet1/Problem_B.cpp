@@ -3,17 +3,18 @@ using namespace std;
 
 int main()
 {
-    int a;
-    long long b;
-    char c;
-    float d;
-    double e;
-    cin >> a >> b >> c >> d >> e;
-    cout << a << "\n"
-         << a << "\n"
-         << b << "\n"
-         << c << "\n"
-         << d << "\n"
-         << e;
+    int x;
+    long long y;
+    char s;
+    float f;
+    double d;
+
+    cin >> x >> y >> s >> f >> d;
+
+    cout << x << "\n"
+         << y << "\n"
+         << s << "\n"
+         << f << "\n"
+         << d;
     return 0;
 }
