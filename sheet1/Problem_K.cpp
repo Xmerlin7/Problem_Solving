@@ -5,11 +5,13 @@ using namespace std;
 
 int main()
 {
-    int a, b, c;
+    int a, b, c, max1, max2, min1, min2;
     cin >> a >> b >> c;
+    max1 = max(a, b);
+    max2 = max(max1, c);
 
-    if ((a < b) && (a < c))
-        cout << a << " ";
-    else if ((b < a) && (b < c))
-        cout << "No Multiples";
+    min1 = min(a, b);
+    min2 = min(min1, c);
+
+    cout << min2 << " " << max2;
 }
