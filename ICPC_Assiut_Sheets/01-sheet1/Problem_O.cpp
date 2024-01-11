@@ -2,12 +2,17 @@
 #include <string>
 #include <sstream>
 using namespace std;
+
 int main()
 {
     string equ;
     int Num1Int, Num2Int, OperatorIndex;
     string num1, num2;
 
+    //* Taking the mathematical expression as input
+    cin >> equ;
+
+    // Finding the index of the operator
     for (int i = 0; i < equ.size(); i++)
     {
         if ((equ[i] == '+') || (equ[i] == '-') || (equ[i] == '*') || (equ[i] == '/'))
@@ -16,15 +21,19 @@ int main()
             break;
         }
     }
-    num1 = equ.substr(0, OperatorIndex - 1);
+
+    //! Extracting the two numbers and converting them to integers
+    
+    num1 = equ.substr(0, OperatorIndex);
     num2 = equ.substr(OperatorIndex + 1);
-    stringstream num;
-    num << num1;
-    num >> Num1Int;
 
-    num << num2;
-    num >> Num2Int;
+    stringstream string1(num1);
+    stringstream string2(num2);
 
+    string1 >> Num1Int;
+    string2 >> Num2Int;
+
+    // Performing the operation based on the operator
     switch (equ[OperatorIndex])
     {
     case '+':
@@ -37,10 +46,15 @@ int main()
         cout << Num1Int * Num2Int;
         break;
     case '/':
-        cout << (int)Num1Int / Num2Int;
+        if (Num2Int != 0)
+            cout << (int)Num1Int / Num2Int;
+        else
+            cout << "Error: Division by zero";
         break;
     default:
+        cout << "Invalid operator";
         break;
     }
-    return (0);
+
+    return 0;
 }
