@@ -22,8 +22,8 @@ int main()
         }
     }
 
-    //! Extracting the two numbers and converting them to integers
-    
+    //? Extracting the two numbers and converting them to integers
+
     num1 = equ.substr(0, OperatorIndex);
     num2 = equ.substr(OperatorIndex + 1);
 
