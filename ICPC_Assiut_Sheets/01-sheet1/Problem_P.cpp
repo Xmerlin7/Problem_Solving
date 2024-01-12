@@ -4,8 +4,9 @@ int main()
 {
     int a;
     cin >> a;
+
     while (a)
-    {     
+    {
         if (a < 10)
         {
             if (a & 0x01)
