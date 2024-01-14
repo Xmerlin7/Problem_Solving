@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     long long eye, mouth, body;
-    cin >> eye >> mo
+    cin >> eye >> mouth >> body;
 
     return (0);
 }
