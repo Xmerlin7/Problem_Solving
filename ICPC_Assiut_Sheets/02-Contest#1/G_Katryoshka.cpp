@@ -14,7 +14,7 @@ int main()
     else if ((mouth == 0) && (eye > 1) && (body > 0))
     {
         //? i rturnded the body to avoid the farction problem
-        toysNumber = (((eye / 2) > body) ? (body) : (eye / 2#));
+        toysNumber = (((eye / 2) > body) ? (body) : (eye / 2));
     }
     else if ((mouth > 0) && (eye > 0) && (body > 0))
     {
