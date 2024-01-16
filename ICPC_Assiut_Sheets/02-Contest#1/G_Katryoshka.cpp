@@ -22,7 +22,7 @@ int main()
         toysNumber = (mouth);
         body -= mouth;
         eye -= mouth;
-        if (eye == 2)
+        if (eye < 0)
         {
             cout << toysNumber;
         }
