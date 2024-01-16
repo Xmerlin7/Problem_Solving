@@ -19,7 +19,7 @@ int main()
     }
     else if ((mouth > 0) && (eye > 0) && (body > 0))
     {
-        toysNumber = ();
+        toysNumber = ((mouth) + min(body, eye));
     }
     else
         cout << 0;
