@@ -15,9 +15,9 @@ int main()
     {
         toysNumber = ();
     }
-    else if ((mouth == 0) && (eye > 1) && (body > 0))
+    else if ((mouth > 0) && (eye > 0) && (body > 0))
     {
         toysNumber = ();
-    }    
+    }
     return (0);
 }
