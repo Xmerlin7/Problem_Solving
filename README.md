@@ -20,7 +20,7 @@ Welcome to my ICPC Assiut Sheets Problem-Solving repository! 💡 Here, you'll f
 ## ✅ Sheets Completion Status
 
 - [x] Sheet 1
-- [ ] Sheet 2
+- [x] Sheet 2
 - [ ] Sheet 3
 - ...
 
