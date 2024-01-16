@@ -32,10 +32,15 @@ int main()
             toysNumber = min(mouth, eye);
             cout << toysNumber;
         }
-        else
+        else if ((mouth > body) && (mouth < eye))
         {
             toysNumber = min(mouth, body);
-            cout << toysNumber;           
+            cout << toysNumber;
+        }
+        else
+        {
+            toysNumber = min(eye, body);
+            cout << toysNumber;
         }
     }
     else
