@@ -2,21 +2,23 @@
 using namespace std;
 
 #define ll long long
+
 int main()
 {
-    double n, k, a;
+    double n, k, a, operation;
     cin >> n >> k >> a;
-    double res = (n * k) / a;
+    operation = (n * k) / a;
 
-    long long long_res = res;
-    double my_res = res - long_res;
-    if (my_res > 0)
+    ll myNum = operation;
+    if (operation == int(operation))
+        cout << "int";
+    else if (operation == myNum)
+    {
+        cout << "long long";
+    }
+    else
     {
         cout << "double";
     }
-    else if (long_res <= 2147483647)
-        cout << "int";
-    else
-        cout << "long long";
-    return (0);
+    return 0;
 }
