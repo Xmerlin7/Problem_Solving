@@ -7,7 +7,7 @@ int main()
     long long toysNumber;
     cin >> eye >> mouth >> body;
     //* note: if u try solve it with loops u will get
-    //! t time limit*/
+    //! time limit*/
 
     if ((eye == 0) || (body == 0))
         cout << 0;
