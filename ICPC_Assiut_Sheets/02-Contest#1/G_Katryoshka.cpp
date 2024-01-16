@@ -22,7 +22,8 @@ int main()
         toysNumber = (mouth);
         body -= mouth;
         eye -= mouth;
-        toysNumber += min(body, eye);
+        toysNumber += min(body, (eye / 2));
+        cout << toysNumber;
     }
     else
         cout << 0;
