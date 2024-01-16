@@ -11,9 +11,13 @@ int main()
 
     if ((eye == 0) || (body == 0))
         cout << 0;
-    else if ((mouth == 0) && (eye > 0) && (body > 0))
+    else if ((mouth == 0) && (eye > 1) && (body > 0))
     {
-        toysNumber = ()
+        toysNumber = ();
     }
+    else if ((mouth == 0) && (eye > 1) && (body > 0))
+    {
+        toysNumber = ();
+    }    
     return (0);
 }
