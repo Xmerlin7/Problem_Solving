@@ -20,7 +20,7 @@ Welcome to my ICPC Assiut Sheets Problem-Solving repository! 💡 Here, you'll f
 ## ✅ Sheets Completion Status
 
 - [x] Sheet 1
-- [x] Sheet 2
+- [ ] Sheet 2
 - [ ] Sheet 3
 - ...
 
@@ -30,7 +30,7 @@ Feel the urge to contribute? Join the adventure! Add new solutions, enhance expl
 
 ## 🤝 Connect
 
-Let's embark on this coding journey together! Connect with me on [https://www.linkedin.com/in/seif-eldarageely-a27125227/](#LinkedIn_Profile_Link) to discuss ICPC Assiut Sheets problems, algorithms, or anything else related to the world of problem-solving!
+Let's embark on this coding journey together! Connect with me on [LinkedIn](https://www.linkedin.com/in/seif-eldarageely-a27125227/) to discuss ICPC Assiut Sheets problems, algorithms, or anything else related to the world of problem-solving!
 
 ---
 
