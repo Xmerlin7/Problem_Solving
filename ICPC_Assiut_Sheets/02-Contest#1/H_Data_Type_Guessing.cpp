@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    double n, k, a, long_res;
+    double n, k, a;
     cin >> n >> k >> a;
-    long_res = (n * k) / a;
+    double long_res = (n * k) / a;
 
     ll myNum = long_res;
     if (long_res == int(long_res))
