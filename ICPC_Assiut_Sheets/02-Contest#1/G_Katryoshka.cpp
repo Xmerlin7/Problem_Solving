@@ -19,17 +19,23 @@ int main()
     }
     else if ((mouth > 0) && (eye > 0) && (body > 0))
     {
-        toysNumber = (mouth);
-        body -= mouth;
-        eye -= mouth;
-        if (eye < 0)
+        if ((mouth < eye) && (mouth < body))
         {
+            toysNumber = mouth;
+            body -= mouth;
+            eye -= mouth;
+            toysNumber += min(body, (eye / 2));
+            cout << toysNumber;
+        }
+        else if ((mouth > eye) && (mouth < body))
+        {
+            toysNumber = min(mouth, eye);
             cout << toysNumber;
         }
         else
         {
-            toysNumber += min(body, (eye / 2));
-            cout << toysNumber;
+            toysNumber = min(mouth, body);
+            cout << toysNumber;           
         }
     }
     else
