@@ -7,12 +7,12 @@ int main()
 {
     double n, k, a;
     cin >> n >> k >> a;
-    double long_res = (n * k) / a;
+    double longRes = (n * k) / a;
 
-    ll myNum = long_res;
-    if (long_res == int(long_res))
+    ll myNum = longRes;
+    if (longRes == int(longRes))
         cout << "int";
-    else if (long_res == myNum)
+    else if (longRes == myNum)
     {
         cout << "long long";
     }
