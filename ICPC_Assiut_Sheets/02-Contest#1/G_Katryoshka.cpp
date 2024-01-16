@@ -6,7 +6,7 @@ int main()
     long long eye, mouth, body;
     long long toysNumber;
     cin >> eye >> mouth >> body;
-    //! note: if u try solve it with loops u will get
+    //* note: if u try solve it with loops u will get
     //! t time limit*/
 
     if ((eye == 0) || (body == 0))
