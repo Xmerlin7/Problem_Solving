@@ -15,6 +15,7 @@ int main()
     {
         //? i rturnded the body to avoid the farction problem
         toysNumber = (((eye / 2) > body) ? (body) : (eye / 2));
+        cout << toysNumber;
     }
     else if ((mouth > 0) && (eye > 0) && (body > 0))
     {
