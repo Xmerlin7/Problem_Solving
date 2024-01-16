@@ -5,14 +5,14 @@ using namespace std;
 
 int main()
 {
-    double n, k, a, operation;
+    double n, k, a, long_res;
     cin >> n >> k >> a;
-    operation = (n * k) / a;
+    long_res = (n * k) / a;
 
-    ll myNum = operation;
-    if (operation == int(operation))
+    ll myNum = long_res;
+    if (long_res == int(long_res))
         cout << "int";
-    else if (operation == myNum)
+    else if (long_res == myNum)
     {
         cout << "long long";
     }
