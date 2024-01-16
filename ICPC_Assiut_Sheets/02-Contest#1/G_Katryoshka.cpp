@@ -13,7 +13,8 @@ int main()
         cout << 0;
     else if ((mouth == 0) && (eye > 1) && (body > 0))
     {
-        toysNumber = ();
+        //? i rturnded the body to avoid the farction problem
+        toysNumber = (((eye / 2) == body) ? (body)  );
     }
     else if ((mouth > 0) && (eye > 0) && (body > 0))
     {
