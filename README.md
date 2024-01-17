@@ -26,7 +26,8 @@ Welcome to my ICPC Assiut Sheets Problem-Solving repository! 💡 Here, you'll f
 
 ## 👨‍💻🤖 solve
 
-Wanna solve the sheet ?!
+Wanna solve the sheets ?!
+
 here is the [ICPC_Assuit_Sheets&Contests](https://docs.google.com/spreadsheets/u/0/d/1EbbsotAwb0zuuwxyzs8l2qh8twqw-sNcNbAjCK1kXaE/htmlview#)
 - It contains 3-phases with helpful videos:
   - NewCommers
