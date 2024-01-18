@@ -6,7 +6,7 @@ int main()
     int n;
     while (n)
     {
-
+        
         n--;
     }
 
