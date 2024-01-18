@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int n, max, number;
+    cin >> n;
     max = 0;
     while (n)
     {
@@ -13,6 +14,7 @@ int main()
             max = number;
         n--;
     }
+    cout << max;
 
     return (0);
 }
