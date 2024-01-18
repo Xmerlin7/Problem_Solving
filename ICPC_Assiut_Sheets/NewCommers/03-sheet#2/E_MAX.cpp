@@ -8,9 +8,9 @@ int main()
     max = 0;
     while (n)
     {
-        
+
         cin >> number;
-        if(max < number)
+        if (max < number)
             max = number;
         n--;
     }
