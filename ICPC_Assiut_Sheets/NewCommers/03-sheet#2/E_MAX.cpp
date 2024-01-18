@@ -3,10 +3,13 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n, max, number;
+    max = 0;
     while (n)
     {
         
+        cin >> number;
+        if 
         n--;
     }
 
