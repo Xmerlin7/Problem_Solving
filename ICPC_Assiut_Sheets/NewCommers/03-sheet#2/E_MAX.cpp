@@ -9,7 +9,8 @@ int main()
     {
         
         cin >> number;
-        if 
+        if(max < number)
+            max = number;
         n--;
     }
 
