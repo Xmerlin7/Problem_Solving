@@ -8,7 +8,7 @@ int main()
     int max = 1;
     while (max++)
     {
-        if (max == 13);
+        if (max == 13)
             break;
         cout << n << " * " << max << " = " << n * max << endl;
     }
