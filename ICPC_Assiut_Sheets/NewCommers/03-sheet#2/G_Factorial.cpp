@@ -28,7 +28,7 @@ int main(void)
 ll get_Fact(int n)
 {
     long long fact;
-    if (n == 0)
+    if (n == 1)
         return (1);
     return (n * get_Fact(n - 1));
 }
