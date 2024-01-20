@@ -13,7 +13,7 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char, int>
 
-bool isPrime (int n);
+bool isPrime(int n);
 int main(void)
 {
     int n;
@@ -26,11 +26,11 @@ int main(void)
         cout << "NO";
     return (0);
 }
-bool isPrime (int n)
+bool isPrime(int n)
 {
     bool isPrime = true;
-    if ( n == 0 || n == 1)
-    isPrime = false;
+    if (n == 0 || n == 1)
+        isPrime = false;
 
     //? note: if n = 3 the loop won't excute so isPrime is still true*/
     for (int i = 2; i <= (n / 2); i++)
