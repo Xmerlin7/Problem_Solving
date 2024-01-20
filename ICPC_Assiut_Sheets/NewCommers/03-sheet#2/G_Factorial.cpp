@@ -10,5 +10,5 @@ int main()
 }
 long long get_Fact(int n)
 {
-    if 
+    if (n)
 }
