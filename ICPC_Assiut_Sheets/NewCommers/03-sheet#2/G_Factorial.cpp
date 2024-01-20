@@ -5,7 +5,10 @@ int main()
 {
     int n;
     cin >> n;
-    
+    for (int i = 0; i < n; i++)
+    {
+        
+    }
     return (0);
 }
 long long get_Fact(int n)
