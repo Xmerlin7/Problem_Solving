@@ -13,13 +13,13 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char, int>
 
-bool isPrime(int n);
+bool isPalindrome(int n, int x);
 int main(void)
 {
 
     return (0);
 }
-bool isPrime(int n)
+bool isPalindrome(int n, int x)
 {
 
     return (0);
