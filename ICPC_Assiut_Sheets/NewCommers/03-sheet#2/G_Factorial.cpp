@@ -4,10 +4,11 @@ long long get_Fact(int n);
 int main()
 {
     int n;
+    
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        
+        cin >> 
     }
     return (0);
 }
