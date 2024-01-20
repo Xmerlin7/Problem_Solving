@@ -23,5 +23,7 @@ int main(void)
 }
 bool isPrime (int n)
 {
-
+    bool isPrime = true;
+    if ( n == 0 || n == 1)
+    isPrime
 }
