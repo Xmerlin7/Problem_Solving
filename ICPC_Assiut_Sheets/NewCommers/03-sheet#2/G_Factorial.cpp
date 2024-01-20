@@ -9,7 +9,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
-        cout << get_Fact(arr[i]) << endl; 
+        cout << get_Fact(arr[i]) << endl;
     }
     return (0);
 }
