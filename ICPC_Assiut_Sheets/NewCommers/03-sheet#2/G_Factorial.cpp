@@ -13,7 +13,7 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char,int>
 ll get_Fact(int n);
-int main()
+int main(void)
 {
     int n;
     cin >> n;
