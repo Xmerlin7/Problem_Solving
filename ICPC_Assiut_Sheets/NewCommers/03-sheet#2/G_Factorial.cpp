@@ -5,7 +5,7 @@ int main()
 {
     int n;
     cin >> n;
-
+    
     return (0);
 }
 long long get_Fact(int n)
