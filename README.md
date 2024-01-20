@@ -4,6 +4,10 @@
 
 Welcome to my ICPC Assiut Sheets Problem-Solving repository! 💡 Here, you'll find my solutions to the challenging problems curated by Assiut University. Each solution comes with a detailed explanation, aiming to provide insights into the problem-solving process.
 
+<p align="center" style="margin-bottom: 10mm;">
+  <img height="180" src="https://media.giphy.com/media/Ztzt8zhmmpVPUiSNMX/giphy.gif" />
+</p>
+
 ## 📁 Folder Structure
 
 - **`Sheet_X`:** Dive into specific sheets to explore problem-solving adventures.
