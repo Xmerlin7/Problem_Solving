@@ -12,6 +12,7 @@ using namespace std;
 #define si set<int>
 #define pii pair<int, int>
 #define mci map<char, int>
+
 int isPrime (int n);
 int main(void)
 {
