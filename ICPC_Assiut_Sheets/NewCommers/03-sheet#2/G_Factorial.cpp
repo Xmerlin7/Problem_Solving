@@ -3,8 +3,8 @@ using namespace std;
 long long get_Fact(int n);
 int main()
 {
-    int n;
-    
+    int n, x, y;
+
     cin >> n;
     for (int i = 0; i < n; i++)
     {
