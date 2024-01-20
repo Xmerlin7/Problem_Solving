@@ -25,5 +25,10 @@ bool isPrime (int n)
 {
     bool isPrime = true;
     if ( n == 0 || n == 1)
-    isPrime
+    isPrime = false;
+
+    for (int i = 2; i <= (n))
+    {
+        
+    }
 }
