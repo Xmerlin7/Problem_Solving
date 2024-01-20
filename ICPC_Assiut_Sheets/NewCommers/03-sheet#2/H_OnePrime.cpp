@@ -17,20 +17,10 @@ int main(void)
 {
     int n;
     cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-        cout << get_Fact(arr[i]) << endl;
-    }
+
     return (0);
 }
 ll get_Fact(int n)
 {
-    long long fact;
-    //? both 1 or zero will wrok, but (1) reduce 1 stack frame 
-    //? so it's better to reduce memory*/
-    if (n == 1)
-        return (1);
-    return (n * get_Fact(n - 1));
+
 }
