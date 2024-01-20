@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+long long get_Fact(int n);
 int main()
 {
     int n;
@@ -10,5 +10,5 @@ int main()
 }
 long long get_Fact(int n)
 {
-    
+    if 
 }
