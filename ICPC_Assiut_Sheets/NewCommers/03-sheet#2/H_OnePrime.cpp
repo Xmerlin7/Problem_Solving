@@ -32,6 +32,7 @@ bool isPrime (int n)
     if ( n == 0 || n == 1)
     isPrime = false;
 
+    //? note: if n = 3 the loop won't excute so isPrime is still true*/
     for (int i = 2; i <= (n / 2); i++)
     {
         if (n % i == 0)
