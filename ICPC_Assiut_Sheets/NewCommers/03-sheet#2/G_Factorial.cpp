@@ -10,5 +10,9 @@ int main()
 }
 long long get_Fact(int n)
 {
-    if (n)
+    long long fact;
+    if (n == 0)
+        return (1);
+    fact = get_Fact(n - 1);
+    return (fact);
 }
