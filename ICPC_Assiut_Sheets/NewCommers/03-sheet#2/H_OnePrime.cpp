@@ -12,7 +12,7 @@ using namespace std;
 #define si set<int>
 #define pii pair<int, int>
 #define mci map<char, int>
-ll get_Fact(int n);
+int isPrime (int n);
 int main(void)
 {
     int n;
@@ -20,7 +20,7 @@ int main(void)
 
     return (0);
 }
-ll get_Fact(int n)
+int isPrime (int n)
 {
 
 }
