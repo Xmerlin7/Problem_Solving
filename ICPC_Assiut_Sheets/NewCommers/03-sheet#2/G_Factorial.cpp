@@ -3,12 +3,12 @@ using namespace std;
 long long get_Fact(int n);
 int main()
 {
-    int n, x, y;
-
+    int n;
     cin >> n;
+    int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> 
+        cin >> arr[0]; 
     }
     return (0);
 }
