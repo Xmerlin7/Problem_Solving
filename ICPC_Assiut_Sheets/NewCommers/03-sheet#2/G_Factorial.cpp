@@ -12,7 +12,7 @@ using namespace std;
 #define si  set<int>
 #define pii pair<int, int>
 #define mci map<char,int>
-long long get_Fact(int n);
+ll get_Fact(int n);
 int main()
 {
     int n;
