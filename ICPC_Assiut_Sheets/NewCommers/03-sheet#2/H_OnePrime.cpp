@@ -13,7 +13,7 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char, int>
 
-int isPrime (int n);
+bool isPrime (int n);
 int main(void)
 {
     int n;
@@ -21,7 +21,7 @@ int main(void)
 
     return (0);
 }
-int isPrime (int n)
+bool isPrime (int n)
 {
 
 }
