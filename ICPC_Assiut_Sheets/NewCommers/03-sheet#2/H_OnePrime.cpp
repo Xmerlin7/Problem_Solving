@@ -17,8 +17,13 @@ bool isPrime (int n);
 int main(void)
 {
     int n;
+    bool Prime;
     cin >> n;
-
+    Prime = isPrime(n);
+    if (Prime == true)
+        cout << "YES";
+    else
+        cout << "NO";
     return (0);
 }
 bool isPrime (int n)
