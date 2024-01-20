@@ -25,7 +25,7 @@ int main()
     }
     return (0);
 }
-long long get_Fact(int n)
+ll get_Fact(int n)
 {
     long long fact;
     if (n == 0)
