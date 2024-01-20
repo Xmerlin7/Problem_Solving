@@ -18,6 +18,6 @@ long long get_Fact(int n)
     long long fact;
     if (n == 0)
         return (1);
-    fact = get_Fact(n - 1);
+    fact = n * get_Fact(n - 1);
     return (fact);
 }
