@@ -8,4 +8,7 @@ int main()
 
     return (0);
 }
-long long get_Fact
+long long get_Fact(int n)
+{
+    
+}
