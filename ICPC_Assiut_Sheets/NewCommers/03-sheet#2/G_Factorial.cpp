@@ -8,7 +8,8 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[0]; 
+        cin >> arr[i];
+        cout << get_Fact(arr[i]) << endl; 
     }
     return (0);
 }
