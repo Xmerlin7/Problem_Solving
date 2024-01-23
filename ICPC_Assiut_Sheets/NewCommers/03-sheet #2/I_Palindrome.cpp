@@ -16,7 +16,11 @@ using namespace std;
 bool isPalindrome(int n, int x);
 int main(void)
 {
+    if(/*condition*/)
+    {
 
+    }
+    else
     return (0);
 }
 bool isPalindrome(int n, int x)
