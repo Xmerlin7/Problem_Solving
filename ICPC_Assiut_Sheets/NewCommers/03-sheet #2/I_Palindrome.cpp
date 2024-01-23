@@ -21,6 +21,8 @@ int main(void)
 
     }
     else
+    {
+    }
     return (0);
 }
 bool isPalindrome(int n, int x)
