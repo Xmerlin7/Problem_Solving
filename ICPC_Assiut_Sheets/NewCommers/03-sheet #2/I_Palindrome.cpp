@@ -16,7 +16,6 @@ using namespace std;
 bool isPalindrome(int n, int x);
 int main(void)
 {
-    int n, rev;
-    
+
     return (0);
 }
