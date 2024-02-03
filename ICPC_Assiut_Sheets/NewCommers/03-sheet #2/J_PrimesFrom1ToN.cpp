@@ -20,17 +20,18 @@ int main(void)
     bool Prime;
     cin >> n;
     for (int i = 2; i <= n; i++)
-    Prime = isPrime(n);
-    if (Prime == true)
-        cout << "YES";
-    else
-        cout << "NO";
+    {
+        Prime = isPrime(i);
+        if (Prime == true)
+        cout << i <<" ";
+    }
+
     return (0);
 }
 bool isPrime(int n)
 {
     /*
-    //unused here as the main loop won't allow for 0 and 1
+    //! unused here as the main loop won't allow for 0 and 1
     bool isPrime = true;
     if (n == 0 || n == 1)
         isPrime = false;
