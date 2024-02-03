@@ -30,9 +30,10 @@ int main(void)
 }
 bool isPrime(int n)
 {
+    bool isPrime = true;
     /*
     //! unused here as the main loop won't allow for 0 and 1
-    bool isPrime = true;
+    
     if (n == 0 || n == 1)
         isPrime = false;
     */
