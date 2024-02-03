@@ -23,7 +23,7 @@ int main(void)
     {
         Prime = isPrime(i);
         if (Prime == true)
-        cout << i <<" ";
+            cout << i << " ";
     }
 
     return (0);
@@ -33,7 +33,7 @@ bool isPrime(int n)
     bool isPrime = true;
     /*
     //! unused here as the main loop won't allow for 0 and 1
-    
+
     if (n == 0 || n == 1)
         isPrime = false;
     */
