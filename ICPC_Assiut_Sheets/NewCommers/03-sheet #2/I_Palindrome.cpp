@@ -13,3 +13,10 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char, int>
 
+int main()
+{
+    int n, rev;
+    
+
+    return (0);
+}
