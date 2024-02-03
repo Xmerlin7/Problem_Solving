@@ -17,11 +17,17 @@ int main()
 {
     int n, rev = 0;
     cin >> n;
+    int orig = n;
     while (n)
     {
-        rev = rev + (n % 10);
+        rev = (rev * 10) + (n % 10);
         n = n / 10;
     }
-
+    if (rev == orig)
+        cout << rev << endl
+             << "YES";
+    else
+        cout << rev << endl
+             << "NO";
     return (0);
 }
