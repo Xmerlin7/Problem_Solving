@@ -13,9 +13,3 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char, int>
 
-bool isPalindrome(int n, int x);
-int main(void)
-{
-
-    return (0);
-}

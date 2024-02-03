@@ -29,7 +29,7 @@ ll get_Fact(int n)
 {
     long long fact;
     //? both 1 or zero will wrok, but (1) reduce 1 stack frame 
-    //? so it's better to reduce memory*/
+    //* so it's better to reduce memory*/
     if (n == 1)
         return (1);
     return (n * get_Fact(n - 1));
