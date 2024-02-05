@@ -23,9 +23,9 @@ int main(void)
 
         if ((n % i) == 0 && (a % i) == 0)
         {
-            
-        }
             cout << i << endl;
+        }
+            
     }
 
     return (0);
