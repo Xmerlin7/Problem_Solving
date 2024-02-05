@@ -25,9 +25,7 @@ int main(void)
         {
             if (maxx < i)
                 maxx = i;
-            
         }
-            
     }
     cout << maxx << endl;
     return (0);
