@@ -15,7 +15,7 @@ int main()
         {
             for (int j = 0; j < x[i]; j++)
             {
-                cout << ch << " ";
+                cout << ch;
             }
             cout << endl;
         }
