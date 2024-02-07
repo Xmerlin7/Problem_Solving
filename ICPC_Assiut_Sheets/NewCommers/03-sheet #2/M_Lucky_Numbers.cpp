@@ -23,6 +23,6 @@ int main()
     {
         temp = i;
         imagee = i;
-
+        
     }
 }
