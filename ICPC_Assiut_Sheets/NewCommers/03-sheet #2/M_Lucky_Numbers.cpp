@@ -16,13 +16,24 @@ using namespace std;
 bool isPrime(int n);
 int main(void)
 {
-    int n, a, lucky;
+    int n, a, lucky = -1;
+    int digit;
 
     cin >> n >> a;
     for (int i = min(n, a); i <= max(n, a); i++)
     {
-        
-        cout << lucky << " " <<endl;
+        int temp = i ;
+        while (i)
+        {
+            digit = i % 10;
+            if ((digit == 7) || (digit == 4))
+                lucky = 1;
+            else
+                lucky = -1;
+            i /= 10;
+        }
+        if (lucky == 1)
+            cout << i << " " <<endl;
     }
     
     return (0);
