@@ -16,16 +16,14 @@ using namespace std;
 bool isPrime(int n);
 int main(void)
 {
-    int n, a, maxx = -1;
+    int n, a, lucky;
+
     cin >> n >> a;
-    for (int i = 1; i <= max(n, a); i++)
+    for (int i = min(n, a); i <= max(n, a); i++)
     {
-
-        if ((n % i) == 0 && (a % i) == 0)
-        {
-
-        }
+        
+        cout << lucky << " " <<endl;
     }
-    cout << maxx << endl;
+    
     return (0);
 }
