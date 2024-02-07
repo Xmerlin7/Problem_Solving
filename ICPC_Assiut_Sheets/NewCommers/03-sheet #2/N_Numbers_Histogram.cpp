@@ -3,12 +3,13 @@ using namespace std;
 
 int main()
 {
-    int x;
-    cin >> x;
+    int n;
+    char ch;
+    int x[n];
+    cin >> n;
+    int x[n];
+    for (int i = 0; i< n; i++)
+        cin >> x[i];
     
-    for (int i = 1; i <= x; i++)
-    {
-        cout << i << endl;
-    }
     return (0);
 }
