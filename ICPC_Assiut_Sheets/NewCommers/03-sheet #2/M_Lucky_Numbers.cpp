@@ -19,10 +19,32 @@ int main()
     cin >> n1 >> n2;
 
     bool isLucky = false;
+    bool noLucky = true;
     for (int i = n1; i <= n2; i++)
     {
         temp = i;
         imagee = i;
-        
+        while (temp)
+        {
+            digit = temp % 10;
+            temp /= 10;
+            if ((digit == 4) || (digit == 7))
+            {
+                isLucky = true;
+                if (temp == 0)
+                {
+                    cout << imagee << " ";
+                    noLucky = false;
+                }
+                    
+            }
+            else
+            {
+                isLucky = false;
+                break;
+            }
+        }
     }
+    if (noLucky == true)
+        cout << -1;
 }
