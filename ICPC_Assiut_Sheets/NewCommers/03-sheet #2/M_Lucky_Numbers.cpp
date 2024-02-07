@@ -13,28 +13,37 @@ using namespace std;
 #define pii pair<int, int>
 #define mci map<char, int>
 
-bool isPrime(int n);
-int main(void)
+int main()
 {
-    int n, a, lucky = -1;
-    int digit;
+    int n1, n2, digit = 0, temp, imagee = 0;
+    cin >> n1 >> n2;
 
-    cin >> n >> a;
-    for (int i = min(n, a); i <= max(n, a); i++)
+    bool isLucky = false, stop = true;
+    for (int i = n1; i <= n2; i++)
     {
-        int temp = i ;
-        while (i)
+        temp = i;
+        imagee = i;
+        while (temp > 0)
         {
-            digit = i % 10;
-            if ((digit == 7) || (digit == 4))
-                lucky = 1;
+            digit = temp % 10;
+            temp /= 10;
+            if (digit == 7 || digit == 4)
+            {
+                isLucky = true;
+                if (temp == 0)
+                {
+                    stop = false;
+                    cout << imagee << " ";
+                }
+            }
             else
-                lucky = -1;
-            i /= 10;
+            {
+                isLucky = false;
+                break;
+            }
         }
-        if (lucky == 1)
-            cout << i << " " <<endl;
     }
-    
-    return (0);
+
+    if (isLucky == false && stop == true)
+        cout << -1;
 }
