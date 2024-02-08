@@ -4,14 +4,10 @@ using namespace std;
 int main()
 {
     int n;
-    int sum;
-
-    int count;
-    cin >> count;
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i < n; i++)
     {
-
-        cout << sum << endl;
+        
+        cout << i << endl;
     }
     return 0;
 }
