@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int n, x, lowest = 2000;
+    int n, lowest = 2000, x = 0;
     cin >> n;
 
     int arr[n];
