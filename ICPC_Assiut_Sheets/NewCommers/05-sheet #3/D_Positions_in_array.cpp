@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int n, x, found = 0;
+    int n, x, lowest = 2000;
     cin >> n;
 
     int arr[n];
@@ -13,10 +13,13 @@ int main()
     //! Big O: O(n)
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] <= 10)
-        
+        if (lowest > arr[i])
+        {
+            x = i + 1;
+            lowest = arr[i];
+        }
     }
-
+    cout << lowest << " " << x;
 
     return 0;
 }
