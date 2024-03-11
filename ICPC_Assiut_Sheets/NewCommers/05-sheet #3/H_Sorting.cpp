@@ -14,10 +14,10 @@ int main()
     {
         if (arr[i] != arr[n - i - 1])
         {
-            flag = 0;
+            
             break;
         }
     }
-    (flag == 1) ? cout << "YES" : cout << "NO";
+    
     return 0;
 }
