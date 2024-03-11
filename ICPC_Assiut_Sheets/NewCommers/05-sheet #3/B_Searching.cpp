@@ -19,10 +19,17 @@ int main()
         }
         else
             end = mid - 1;
+        if (x == arr[mid])
+        {
+            cout << start;
+            break;
+        }
+        else
+        {
+            cout << -1;
+            break;
+        }
     }
-    if (x == arr[start])
-        cout << start;
-    else 
-        cout << -1;
+
     return 0;
 }
