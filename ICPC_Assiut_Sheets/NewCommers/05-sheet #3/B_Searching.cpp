@@ -4,18 +4,11 @@ using namespace std;
 int main()
 {
 
-    int n;
+    int n, x;
     cin >> n;
-    long long a[n], sum = 0;
+    long long a[n];
     for (int i = 0; i < n; i++)
-    {
         cin >> a[i];
-        sum += a[i];
-    }
-    if (sum >= 0)
-        cout << sum;
-    else
-        cout << abs(sum);
-
+    cin >> x;
     return 0;
 }
