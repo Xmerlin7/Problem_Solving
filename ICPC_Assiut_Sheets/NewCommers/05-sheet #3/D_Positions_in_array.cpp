@@ -10,7 +10,7 @@ int main()
     int arr[n], ferqArray[n] = {0};
     for (int i = 0; i < n; i++)
         cin >> arr[i];
-    //! Big O: O(n)
+    //! Big O: O(n) + O(n) = O(n)
     for (int i = 0; i < n; i++)
     {
         if (arr[i] <= 10)
