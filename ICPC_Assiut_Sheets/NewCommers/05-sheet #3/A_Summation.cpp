@@ -5,17 +5,17 @@ int main()
 {
 
     int n;
-    long long sum = 0;
     cin >> n;
-
-    long long arr[n];
+    long long a[n], sum = 0;
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
-        sum += arr[i];
+        cin >> a[i];
+        sum += a[i];
     }
     if (sum >= 0)
         cout << sum;
     else
         cout << abs(sum);
+
+    return 0;
 }
