@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int n, lowest = 2000, x = 0;
+    int n, flag = 1;
     cin >> n;
 
     int arr[n];
@@ -13,8 +13,13 @@ int main()
     //! Big O: O(n)
     for (int i = n - 1; i >= 0; i--)
     {
-        cout << arr[i] << " ";
+        if ( arr[i] != arr[n - i - 1])
+        {
+            flag = 0;
+            break;
+        }
+            
     }
-
+    (flag == 1) ? cout << "YES" : cout << "NO";
     return 0;
 }
