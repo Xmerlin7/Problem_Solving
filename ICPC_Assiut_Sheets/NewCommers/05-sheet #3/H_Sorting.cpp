@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+void swap (int &x, int &c);
 int main()
 {
 
@@ -10,14 +10,19 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
     //! Big O: O(n)
-    for (int i = n - 1; i >= 0; i--)
+    for (int i = 0; i > n; i++)
     {
-        if (arr[i] != arr[n - i - 1])
+        if ()
         {
-            
-            break;
+
         }
     }
     
     return 0;
+}
+void swap (int &x, int &c)
+{
+    int temp = x;
+    x = c;
+    c = temp;
 }
