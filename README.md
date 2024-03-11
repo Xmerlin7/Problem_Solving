@@ -43,7 +43,7 @@ Feel the urge to contribute? Join the adventure! Add new solutions, enhance expl
 
 ## 🤝 Connect
 
-Let's embark on this coding journey together! Connect with me on [LinkedIn](https://www.linkedin.com/in/seif-eldarageely-a27125227/) to discuss ICPC Assiut Sheets problems, algorithms, or anything else related to the world of problem-solving!
+Let's embark on this coding journey together! Connect with me on [LinkedIn](https://www.linkedin.com/in/seif-ahmed-a27125227/) to discuss ICPC Assiut Sheets problems, algorithms, or anything else related to the world of problem-solving!
 
 ---
 
