@@ -23,7 +23,9 @@ Welcome to my ICPC Assiut Sheets Problem-Solving repository! 💡 Here, you'll f
 ## ✅ Sheets Completion Status
 
 - [x] Sheet 1
+- [x] contest 1
 - [x] Sheet 2
+- [x] contest 2
 - [x] Sheet 3
 - [ ] sheet 4
 - ...
