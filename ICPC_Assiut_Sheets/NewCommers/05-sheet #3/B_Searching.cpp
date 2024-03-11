@@ -12,11 +12,13 @@ int main()
     cin >> x;
     while (start < end)
     {
-        mid = n / 2;
+        mid = (start + end) / 2;
         if (x > arr[mid])
         {
             start = mid + 1;
         }
+        else
+            end = mid - 1;
     }
     return 0;
 }
