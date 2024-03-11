@@ -13,6 +13,7 @@ int main()
         cin >> arr[i];
     }
     cin >> x;
+    //! Big O: O(n)
     for (int i = 0; i < n; i++)
     {
         if (arr[i] == x)
