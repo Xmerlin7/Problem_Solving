@@ -5,6 +5,7 @@ int main()
 {
 
     int n, lowest = numeric_limits<int>::max(), x = 0;
+    int freqArray[numeric_limits<int>::max()] = {0};
     cin >> n;
 
     int arr[n];
