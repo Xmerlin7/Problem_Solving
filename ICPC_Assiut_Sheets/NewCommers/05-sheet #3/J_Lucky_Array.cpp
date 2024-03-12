@@ -9,11 +9,11 @@ int main() {
     int arr[n];
     int minElement = numeric_limits<int>::max();
     int minFreq = 0;
-    
+
     //! Big O: O(n)
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
-        if (arr[i] < minElement) {
+        if (minElement > arr[i]) {
             minElement = arr[i];
             minFreq = 1; // Reset frequency for the new minimum element
         } else if (arr[i] == minElement) {
