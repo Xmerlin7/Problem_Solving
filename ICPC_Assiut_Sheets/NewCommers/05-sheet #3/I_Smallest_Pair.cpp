@@ -32,7 +32,7 @@ int main()
                 }
             }
         }
-        smallestFound = 0;
+        smallestFound = numeric_limits<int>::max();
     }
 
     cout << smallestFound << endl;
