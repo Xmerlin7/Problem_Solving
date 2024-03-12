@@ -9,8 +9,8 @@ int main()
 
     while (t)
     {
-        for (int i = 0; i <= n; i++)
-            cin >> arr[i];
+        for (int k = 0; k <= n; k++)
+            cin >> arr[k];
         //! Big O: O(n ^ 2)
         for (int i = 1; i <= n; i++)
         {
