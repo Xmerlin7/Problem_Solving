@@ -16,11 +16,15 @@ int main()
     {
         if (lowest > arr[i])
         {
-            x = i + 1;
+            x = i;
             lowest = arr[i];
+            freqArray[arr[i]]++;
         }
     }
-    cout << lowest << " " << x;
+    if (freqArray[x] % 2 != 0)
+        cout << "Lucky";
+    else
+        cout << "Unlucky";
 
     return 0;
 }
