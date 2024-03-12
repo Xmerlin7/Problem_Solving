@@ -18,7 +18,6 @@ int main()
             {
                 if (smallest > (arr[i] + arr[j] + j - i))
                     smallest = (arr[i] + arr[j] + j - i);
-                    
             }
         }
 
@@ -26,6 +25,6 @@ int main()
     }
 
     cout << smallest;
-    
+
     return 0;
 }
