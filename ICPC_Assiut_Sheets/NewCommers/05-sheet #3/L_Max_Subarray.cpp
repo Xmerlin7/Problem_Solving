@@ -14,12 +14,15 @@ int main()
             cin >> arr[i];
             cout << arr[i] << " ";
         }
-        int i = 0;
+        int flag = 0;
         int z = 0;
         int ma;
         while (true)
         { 
-
+            if (flag == 0)
+            {
+                
+            }
         }
         cout << endl;
     }
