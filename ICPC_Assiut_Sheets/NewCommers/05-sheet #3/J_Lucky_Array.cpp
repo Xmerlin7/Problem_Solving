@@ -1,30 +1,38 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <limits>
 using namespace std;
 
 int main()
 {
-
-    int n, lowest = numeric_limits<int>::max(), x = 0;
-    int freqArray[2000] = {0};
+    int n;
     cin >> n;
 
     int arr[n];
-    for (int i = 0; i < n; i++)
-        cin >> arr[i];
-    //! Big O: O(n)
+    int minElement = numeric_limits<int>::max();
+    int minFreq = 0;
+
     for (int i = 0; i < n; i++)
     {
-        if (lowest > arr[i])
+        cin >> arr[i];
+        if (arr[i] < minElement)
         {
-            x = i;
-            lowest = arr[i];
-            freqArray[arr[i]]++;
+            minElement = arr[i];
+            minFreq = 1; // Reset frequency for the new minimum element
+        }
+        else if (arr[i] == minElement)
+        {
+            minFreq++; // Increment frequency for the minimum element
         }
     }
-    if (freqArray[lowest] % 2 == 0)
-        cout << "Unlucky";
+
+    if (minFreq % 2 == 1)
+    {
+        cout << "Lucky" << endl;
+    }
     else
-        cout << "Lucky";
+    {
+        cout << "Unlucky" << endl;
+    }
 
     return 0;
 }
