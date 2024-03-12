@@ -4,12 +4,12 @@ using namespace std;
 int main()
 {
     int n, t, smallest = 20000;
-    cin >> t, n;
+    cin >> t >> n;
     int arr[n];
 
-    while (t)
+    while (t--)
     {
-        for (int k = 0; k <= n; k++)
+        for (int k = 0; k < n; k++)
             cin >> arr[k];
         //! Big O: O(n ^ 2)
         for (int i = 1; i <= n; i++)
@@ -20,8 +20,6 @@ int main()
                     smallest = (arr[i] + arr[j] + j - i);
             }
         }
-
-        t--;
     }
 
     cout << smallest;
