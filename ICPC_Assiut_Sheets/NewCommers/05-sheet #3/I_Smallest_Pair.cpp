@@ -4,8 +4,7 @@ using namespace std;
 int main()
 {
     int n, t, smallest;
-    cin >> n, t;
-    bool flag = true;
+    cin >> t, n;
     int arr[n];
 
     while (t)
