@@ -8,7 +8,7 @@ int main()
 {
 
     int t, n, smallestFound;
-
+    
     cin >> t;
 
     while (t--)
@@ -18,18 +18,19 @@ int main()
         //? Initialize with maximum int value
         smallestFound = numeric_limits<int>::max();
         int sum = 0;
-        for (int i = 0; i < n; i++)
-            cin >> arr[i];
+        for (int k = 0; k < n; k++)
+            cin >> arr[k];
 
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i <= n; i++)
         {
-            for (int j = 2; j < n; j++)
+            for (int j = i + 1; j <= n; j++)
             {
-                sum = arr[i] + arr[j] + j - i;
+                sum = arr[i - 1] + arr[j - 1] + (j - i);
                 if (sum < smallestFound)
                 {
                     smallestFound = sum;
                 }
+                
             }
         }
 
