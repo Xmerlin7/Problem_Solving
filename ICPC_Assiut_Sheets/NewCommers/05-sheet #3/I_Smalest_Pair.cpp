@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n, t;
+    int n, t, smallest;
     cin >> n, t;
     bool flag = true;
     int arr[n];
@@ -12,13 +12,10 @@ int main()
     {
         for (int i = 0; i < n; i++)
             cin >> arr[i];
-        //! Big O: O(n^2)
+        //! Big O: O(n)
         for (int i = 0; i < n - 1; i++)
         {
 
-            for (int j = 0; j < n - i - 1; j++)
-            {
-            }
         }
 
         t--;
