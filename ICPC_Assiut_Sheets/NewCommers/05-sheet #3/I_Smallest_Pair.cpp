@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-    //? Initialize with maximum int value
-    int t, n, smallestFound = numeric_limits<int>::max();
+
+    int t, n, smallestFound;
 
     cin >> t;
 
@@ -15,7 +15,8 @@ int main()
     {
         cin >> n;
         vector<int> arr(n); // Use a vector for dynamic size and safety
-
+        //? Initialize with maximum int value
+        smallestFound = numeric_limits<int>::max();
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
@@ -32,11 +33,9 @@ int main()
                 }
             }
         }
-        smallestFound = numeric_limits<int>::max();
+
         cout << smallestFound << endl;
     }
-
-    
 
     return 0;
 }
