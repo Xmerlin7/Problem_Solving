@@ -25,9 +25,14 @@ int main()
             }
             else if (flag != 0)
             {
-                
+                maxx = max(maxx, arr[flag + 1]);
             }
             cout << maxx << " ";
+            if (flag == size - 1)
+            {
+                z++;
+                
+            }
         }
         cout << endl;
     }
