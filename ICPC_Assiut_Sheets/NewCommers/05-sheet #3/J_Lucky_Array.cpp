@@ -1,38 +1,30 @@
 #include <iostream>
 #include <limits>
 using namespace std;
-
-int main()
-{
+ 
+int main() {
     int n;
     cin >> n;
-
+    
     int arr[n];
     int minElement = numeric_limits<int>::max();
     int minFreq = 0;
-
-    for (int i = 0; i < n; i++)
-    {
+    
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
-        if (arr[i] < minElement)
-        {
+        if (arr[i] < minElement) {
             minElement = arr[i];
             minFreq = 1; // Reset frequency for the new minimum element
-        }
-        else if (arr[i] == minElement)
-        {
+        } else if (arr[i] == minElement) {
             minFreq++; // Increment frequency for the minimum element
         }
     }
-
-    if (minFreq % 2 == 1)
-    {
+    
+    if (minFreq % 2 == 1) {
         cout << "Lucky" << endl;
-    }
-    else
-    {
+    } else {
         cout << "Unlucky" << endl;
     }
-
+    
     return 0;
 }
