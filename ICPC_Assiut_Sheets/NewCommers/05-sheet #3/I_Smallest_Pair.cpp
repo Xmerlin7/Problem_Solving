@@ -17,7 +17,9 @@ int main()
         {
             for (int j = 1; i < n; j++)
             {
-                if (smallest < (arr[i] + arr[j] + j - i))
+                if (smallest > (arr[i] + arr[j] + j - i))
+                    smallest = (arr[i] + arr[j] + j - i);
+                    
             }
         }
 
