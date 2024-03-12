@@ -19,6 +19,8 @@ int main()
         int maxx;
         while (true)
         {
+            if ( z == (size - 1))
+                break;
             if (flag == z)
             {
                 maxx = max(arr[flag], arr[flag + 1]);
@@ -28,6 +30,7 @@ int main()
                 maxx = max(maxx, arr[flag + 1]);
             }
             cout << maxx << " ";
+            flag++;
             if (flag == size - 1)
             {
                 z++;
