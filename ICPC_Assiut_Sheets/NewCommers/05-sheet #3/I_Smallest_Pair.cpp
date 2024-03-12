@@ -33,9 +33,10 @@ int main()
             }
         }
         smallestFound = numeric_limits<int>::max();
+        cout << smallestFound << endl;
     }
 
-    cout << smallestFound << endl;
+    
 
     return 0;
 }
