@@ -19,11 +19,11 @@ int main()
         int maxx;
         while (true)
         {
-            if (flag == 0)
+            if (flag == z)
             {
                 maxx = max(arr[flag], arr[flag + 1]);
             }
-            else if (flag != 0)
+            else
             {
                 maxx = max(maxx, arr[flag + 1]);
             }
