@@ -32,6 +32,7 @@ int main()
                 }
             }
         }
+        smallestFound = 0;
     }
 
     cout << smallestFound << endl;
