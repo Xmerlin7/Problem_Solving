@@ -24,7 +24,7 @@ int main()
     if (freqArray[lowest] % 2 == 0)
         cout << "Unlucky";
     else
-        cout << "lucky";
+        cout << "Lucky";
 
     return 0;
 }
