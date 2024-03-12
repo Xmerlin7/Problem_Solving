@@ -6,7 +6,8 @@ using namespace std;
 
 int main()
 {
-    int t, n, smallestFound = numeric_limits<int>::max(); // Initialize with maximum int value
+    //? Initialize with maximum int value
+    int t, n, smallestFound = numeric_limits<int>::max();
 
     cin >> t;
 
