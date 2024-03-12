@@ -10,6 +10,7 @@ int main() {
     int minElement = numeric_limits<int>::max();
     int minFreq = 0;
     
+    //! Big O: O(n)
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
         if (arr[i] < minElement) {
