@@ -21,10 +21,10 @@ int main()
             freqArray[arr[i]]++;
         }
     }
-    if (freqArray[x] % 2 != 0)
-        cout << "Lucky";
-    else
+    if (freqArray[lowest] % 2 == 0)
         cout << "Unlucky";
+    else
+        cout << "lucky";
 
     return 0;
 }
