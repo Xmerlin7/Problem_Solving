@@ -16,13 +16,18 @@ int main()
         }
         int flag = 0;
         int z = 0;
-        int ma;
+        int maxx;
         while (true)
         { 
             if (flag == 0)
             {
+                maxx = max(arr[flag], arr[flag + 1]);
+            }
+            else if (flag != 0)
+            {
                 
             }
+            cout << maxx << " ";
         }
         cout << endl;
     }
