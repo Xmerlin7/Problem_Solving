@@ -18,9 +18,7 @@ int main()
         //? Initialize with maximum int value
         smallestFound = numeric_limits<int>::max();
         for (int i = 0; i < n; i++)
-        {
             cin >> arr[i];
-        }
 
         for (int i = 1; i < n; i++)
         {
