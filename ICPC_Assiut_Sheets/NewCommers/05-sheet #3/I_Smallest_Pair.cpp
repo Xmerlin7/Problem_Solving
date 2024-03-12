@@ -10,12 +10,15 @@ int main()
 
     while (t)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i <= n; i++)
             cin >> arr[i];
-        //! Big O: O(n)
-        for (int i = 0; i < n - 1; i++)
+        //! Big O: O(n ^ 2)
+        for (int i = 1; i <= n; i++)
         {
-
+            for (int j = 1; i < n; j++)
+            {
+                if (smallest < (arr[i] + arr[j] + j - i))
+            }
         }
 
         t--;
