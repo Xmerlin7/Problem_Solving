@@ -17,6 +17,7 @@ int main()
         vector<int> arr(n); // Use a vector for dynamic size and safety
         //? Initialize with maximum int value
         smallestFound = numeric_limits<int>::max();
+        int sum = 0;
         for (int i = 0; i < n; i++)
             cin >> arr[i];
 
@@ -24,7 +25,7 @@ int main()
         {
             for (int j = 2; j < n; j++)
             {
-                int sum = arr[i] + arr[j] + j - i;
+                sum = arr[i] + arr[j] + j - i;
                 if (sum < smallestFound)
                 {
                     smallestFound = sum;
