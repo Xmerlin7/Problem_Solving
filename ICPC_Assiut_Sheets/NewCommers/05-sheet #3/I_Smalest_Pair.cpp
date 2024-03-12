@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void swap(int &x, int &c);
+
 int main()
 {
     int n, t;
