@@ -1,28 +1,39 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <limits> // For numeric_limits
+
 using namespace std;
 
 int main()
 {
-    int n, t, smallest = 20000;
-    cin >> t >> n;
-    int arr[n];
+    int t, n, smallestFound = numeric_limits<int>::max(); // Initialize with maximum int value
+
+    cin >> t;
 
     while (t--)
     {
-        for (int k = 0; k < n; k++)
-            cin >> arr[k];
-        //! Big O: O(n ^ 2)
-        for (int i = 1; i <= n; i++)
+        cin >> n;
+        vector<int> arr(n); // Use a vector for dynamic size and safety
+
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+
+        for (int i = 1; i < n; i++)
         {
             for (int j = 1; j < n; j++)
             {
-                if (smallest > (arr[i] + arr[j] + j - i))
-                    smallest = (arr[i] + arr[j] + j - i);
+                int sum = arr[i] + arr[j] + j - i;
+                if (sum < smallestFound)
+                {
+                    smallestFound = sum;
+                }
             }
         }
     }
 
-    cout << smallest;
+    cout << smallestFound << endl;
 
     return 0;
 }
