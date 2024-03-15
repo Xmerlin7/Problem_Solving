@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void swap(int *arr, int iMinSaver, int iMaxSaver);
+void swapy(vector<int>& arr, int iMinSaver, int iMaxSaver);
 int main()
 {
 
@@ -27,13 +27,23 @@ int main()
             iMinSaver = i;
         }
     }
-    swap(arr, iMinSaver, iMaxSaver);
+    //! pass first element adress swapy(&arr[0], iMinSaver, iMaxSaver)
+    swapy(arr, iMinSaver, iMaxSaver);
     for (auto &x : arr)
         cout << x << " ";
 }
-void swap(int *arr, int iMinSaver, int iMaxSaver)
+
+//! to solve error u can change the signature or:
+void swapy(vector<int>& arr, int iMinSaver, int iMaxSaver)
 {
     int temp = arr[iMaxSaver];
     arr[iMaxSaver] = arr[iMinSaver];
     arr[iMinSaver] = temp;
 }
+//! to use this look at lin 30
+// void swapy(int *arr, int iMinSaver, int iMaxSaver)
+// {
+//     int temp = arr[iMaxSaver];
+//     arr[iMaxSaver] = arr[iMinSaver];
+//     arr[iMinSaver] = temp;
+// }
