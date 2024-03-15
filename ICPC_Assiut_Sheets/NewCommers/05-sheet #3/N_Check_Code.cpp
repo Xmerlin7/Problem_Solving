@@ -9,16 +9,12 @@ int main()
     string code;
 
     cin >> code;
-    if (n1 + n2 + 1 != code.size())
+    if ((n1 + n2 + 1 != code.size()) || (code[n1] != '-'))
     {
         cout << "No" << endl;
         return 0;
     }
-    if (code[n1] != '-')
-    {
-        cout << "No" << endl;
-        return 0;
-    }
+
     int counter = 0;
     for (int i = 0; i < code.size(); i++)
     {
