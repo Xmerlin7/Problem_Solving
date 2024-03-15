@@ -18,7 +18,7 @@ int main()
         if (maxx < arr[i])
         {
             maxx = arr[i];
-            iMaxSaver = i
+            iMaxSaver = i;
         }
         if (minn > arr[i])
         {
