@@ -2,43 +2,43 @@
 using namespace std;
 int main()
 {
-    int testCases, ctr;
-
-    cin >> testCases;
-
-    while (testCases--)
-    {
-        int n;
-        cin >> n;
-        int arr[n];
-        int i, z;
-        for (i = 0; i < n; i++)
+    int counter;
+    cin >> counter; // 2
+    while (counter--)
+    { // 2 1 0
+        int size;
+        cin >> size;
+        int arr[size];
+        for (int i = 0; i < size; i++)
         {
             cin >> arr[i];
+            cout << arr[i] << " ";
         }
-        i = 0;
-        z = 0;
+        int i = 0;
+        int z = 0;
+        int ma;
         while (true)
         {
-            if (z == n - 1)
+            if (z == size - 1)
             {
                 break;
             }
-            if (arr[i] < arr[i + 1])
+            if (i == z)
             {
-                z++;
-                i = z;
-                continue;
+                ma = max(arr[i], arr[i + 1]);
             }
+            else
+            {
+                ma = max(ma, arr[i + 1]);
+            }
+            cout << ma << " ";
             i++;
-            ctr++;
-            if (i = n - 1)
+            if (i == size - 1)
             {
                 z++;
                 i = z;
             }
         }
-
-        cout << ctr << endl;
+        cout << endl;
     }
 }
