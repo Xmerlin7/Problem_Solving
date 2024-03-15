@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+void swap(int *arr, int iMinSaver, int iMaxSaver);
 int main()
 {
 
@@ -28,7 +29,7 @@ int main()
     }
     swap(arr, iMinSaver, iMaxSaver);
     for (auto &x : arr)
-        cout << x << "";
+        cout << x << " ";
 }
 void swap(int *arr, int iMinSaver, int iMaxSaver)
 {
