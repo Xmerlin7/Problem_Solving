@@ -27,7 +27,7 @@ int main()
             iMinSaver = i;
         }
     }
-    //! pass first element adress swapy(&arr, iMinSaver, iMaxSaver)
+    //! pass first element adress swapy(&arr[0], iMinSaver, iMaxSaver)
     swapy(arr, iMinSaver, iMaxSaver);
     for (auto &x : arr)
         cout << x << " ";
