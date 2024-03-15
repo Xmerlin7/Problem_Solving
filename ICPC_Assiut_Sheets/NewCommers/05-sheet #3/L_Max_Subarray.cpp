@@ -19,7 +19,7 @@ int main()
         int maxx;
         while (true)
         {
-            if ( z == (size - 1))
+            if (z == (size - 1))
                 break;
             if (flag == z)
             {
