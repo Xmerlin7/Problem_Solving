@@ -3,24 +3,42 @@ using namespace std;
 int main()
 {
     int testCases, ctr;
-    int n;
-    cin >> testCases >> n;
-    int arr[n];
-    ctr = n;
+
+    cin >> testCases;
+
     while (testCases--)
     {
-        for (int i = 0; i < n; i++)
+        int n;
+        cin >> n;
+        int arr[n];
+        int i, z;
+        for (i = 0; i < n; i++)
         {
             cin >> arr[i];
         }
-        for (int i = 0; i < n; i++)
+        i = 0;
+        z = 0;
+        while (true)
         {
-            for (int j = i + 1; j < n; j++)
+            if (z == n - 1)
             {
-                ctr++;
+                break;
+            }
+            if (arr[i] < arr[i + 1])
+            {
+                z++;
+                i = z;
+                continue;
             }
             i++;
+            ctr++;
+            if (i = n - 1)
+            {
+                z++;
+                i = z;
+            }
         }
+
         cout << ctr << endl;
     }
 }
