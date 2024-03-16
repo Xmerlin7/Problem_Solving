@@ -3,27 +3,40 @@ using namespace std;
 int main()
 {
     int counter;
-    cin >> counter;
+    cin >> counter; 
     while (counter--)
-    {
-        int n, i, z, ctr;
-        cin >> n;
-        int arr[n];
-        for (i = 0; i < n; i++)
+    { 
+        int size;
+        int result = 0;
+        cin >> size;
+        int arr[size];
+        for (int i = 0; i < size; i++)
         {
             cin >> arr[i];
         }
-        z = 0;
-        i = 0;
-        if (z == n - 1)
-            break;
-        if (arr[i] < arr[i + 1])
+        result = size;
+        int i = 0;
+        int z = 0;
+        while (true)
         {
-            z++;
-            i = z;
-            continue;
+            if (z == size - 1)
+            {
+                break;
+            }
+            if (arr[i] > arr[i + 1])
+            {
+                z++;
+                i = z;
+                continue;
+            }
+            result++;
+            i++;
+            if (i == size - 1)
+            {
+                z++;
+                i = z;
+            }
         }
-
-        cout << endl;
+        cout << result << endl;
     }
 }
