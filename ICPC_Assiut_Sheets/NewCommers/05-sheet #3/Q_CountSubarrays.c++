@@ -3,10 +3,10 @@ using namespace std;
 int main()
 {
     int counter;
-    cin >> counter; 
+    cin >> counter;
     while (counter--)
-    { 
-        int n, i , z, ctr;
+    {
+        int n, i, z, ctr;
         cin >> n;
         int arr[n];
         for (i = 0; i < n; i++)
