@@ -23,7 +23,7 @@ int main()
             {
                 sum1 += arr[i][z];
             }
-            if (size - 1 - z == i)
+            if ((size - 1 - z) == i)
             {
                 sum2 += arr[i][z];
             }
