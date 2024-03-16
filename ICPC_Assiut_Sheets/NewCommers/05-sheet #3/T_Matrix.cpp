@@ -15,9 +15,9 @@ int main()
     long long sum1 = 0;
     long long sum2 = 0;
     for (int i = 0; i < size; i++)
-    { //
+    { 
         for (int z = 0; z < size; z++)
-        { //
+        { 
             if (i == z)
             {
                 sum1 += arr[i][z];
