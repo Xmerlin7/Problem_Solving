@@ -15,7 +15,9 @@ int main()
         }
         z = 0;
         i = 0;
-        if (arr[i] > arr[i + 1])
+        if (z == n - 1)
+            break;
+        if (arr[i] < arr[i + 1])
         {
             z++;
             i = z;
