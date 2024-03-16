@@ -13,6 +13,14 @@ int main()
         {
             cin >> arr[i];
         }
+        z = 0;
+        i = 0;
+        if (arr[i] > arr[i + 1])
+        {
+            z++;
+            i = z;
+            continue;
+        }
 
         cout << endl;
     }
