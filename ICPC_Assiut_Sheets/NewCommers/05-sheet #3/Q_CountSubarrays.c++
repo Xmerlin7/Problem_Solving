@@ -5,7 +5,7 @@ int main()
     int counter;
     cin >> counter; // 2
     while (counter--)
-    { // 2 1 0
+    { 
         int size;
         cin >> size;
         int arr[size];
