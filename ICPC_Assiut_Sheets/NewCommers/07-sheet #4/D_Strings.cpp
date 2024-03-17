@@ -9,7 +9,8 @@ int main()
     cin >> X >> Y;
 
     cout << X.size() << " " << Y.size() << endl;
-    cout << X.append(Y) << endl;
+    string concatenated = X + Y;
+    cout << concatenated << endl;
     char temp;
     temp = X[0];
     X[0] = Y[0];
