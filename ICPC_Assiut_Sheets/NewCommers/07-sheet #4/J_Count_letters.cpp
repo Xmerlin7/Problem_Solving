@@ -1,25 +1,28 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <algorithm>
+
 using namespace std;
+
 int main()
 {
     string value;
     cin >> value;
-    //            0   1   2   3   4   5
-    // regffe    ['r','e','g','f','f','e']
+
     sort(value.begin(), value.end());
-    // 012345
-    // eeffgr
-    int size = value.size(); // 5
+
+    int size = value.size();
     for (int i = 0; i < size; i++)
-    {                      // i = 3
-        char c = value[i]; // e
+    {
+        char c = value[i];
         int counter = 1;
-        while (value[i] == value[++i])
-        {              // i = 2
-            counter++; // 2
+        while (i + 1 < size && value[i] == value[i + 1])
+        {
+            counter++;
+            i++;
         }
-        i--; // i = 1
         cout << c << " : " << counter << endl;
-        // i = 2
     }
+
+    return 0;
 }
