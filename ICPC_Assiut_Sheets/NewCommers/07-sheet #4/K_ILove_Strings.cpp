@@ -1,27 +1,31 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
 
 using namespace std;
 
-int main()
-{
-    string value;
-    cin >> value;
+int main() {
+    int N;
+    cin >> N;
 
-    sort(value.begin(), value.end());
+    while (N--) {
+        string S, T;
+        cin >> S >> T;
 
-    int size = value.size();
-    for (int i = 0; i < size; i++)
-    {
-        char c = value[i];
-        int counter = 1;
-        while (i + 1 < size && value[i] == value[i + 1])
-        {
-            counter++;
-            i++;
+        string result;
+        int i = 0, j = 0;
+
+        // Iterate over both strings alternately
+        while (i < S.length() || j < T.length()) {
+            if (i < S.length()) {
+                result += S[i];
+                i++;
+            }
+            if (j < T.length()) {
+                result += T[j];
+                j++;
+            }
         }
-        cout << c << " : " << counter << endl;
+        cout << result << endl;
     }
 
     return 0;
