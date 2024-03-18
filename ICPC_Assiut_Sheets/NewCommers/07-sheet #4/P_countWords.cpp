@@ -11,22 +11,23 @@ bool isDelimiter(char c)
 int countWords(string S)
 {
     int wordCount = 0;
+    bool inWord = false;
 
-    // Iterate through the characters of the string
     for (int i = 0; i < S.length(); i++)
     {
-        // If the current character is a delimiter and the previous character is not a delimiter,
-        // we have encountered the end of a word
-        if (isDelimiter(S[i]) && (i == 0 || !isDelimiter(S[i - 1])))
+        if (!isDelimiter(S[i]))
         {
-            wordCount++;
-        }
-    }
 
-    // If the string doesn't end with a delimiter, we need to count the last word
-    if (!isDelimiter(S.back()))
-    {
-        wordCount++;
+            if (!inWord)
+            {
+                wordCount++;
+                inWord = true;
+            }
+        }
+        else
+        {
+            inWord = false;
+        }
     }
 
     return wordCount;
