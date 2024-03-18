@@ -5,31 +5,39 @@
 
 using namespace std;
 
-string removeSingleLineComments(string line) {
+string removeSingleLineComments(string line)
+{
     string result;
     bool inSingleLineComment = false;
     bool inBlockComment = false;
-    
-    for (int i = 0; i < line.length(); i++) {
-        if (!inSingleLineComment && !inBlockComment && line[i] == '/' && i + 1 < line.length() && line[i + 1] == '/') {
+
+    for (int i = 0; i < line.length(); i++)
+    {
+        if (!inSingleLineComment && !inBlockComment && line[i] == '/' && i + 1 < line.length() && line[i + 1] == '/')
+        {
             // Start of a single-line comment
             break;
-        } else if (!inSingleLineComment && !inBlockComment && line[i] == '/' && i + 1 < line.length() && line[i + 1] == '*') {
+        }
+        else if (!inSingleLineComment && !inBlockComment && line[i] == '/' && i + 1 < line.length() && line[i + 1] == '*')
+        {
             // Start of a block comment
             inBlockComment = true;
             i++;
-        } else if (!inSingleLineComment && inBlockComment && line[i] == '*' && i + 1 < line.length() && line[i + 1] == '/') {
+        }
+        else if (!inSingleLineComment && inBlockComment && line[i] == '*' && i + 1 < line.length() && line[i + 1] == '/')
+        {
             // End of a block comment
             inBlockComment = false;
             i++;
-        } else if (!inSingleLineComment && !inBlockComment) {
+        }
+        else if (!inSingleLineComment && !inBlockComment)
+        {
             result += line[i];
         }
     }
-    
+
     return result;
 }
-
 
 // Function to remove blank lines and lines consisting of only spaces
 vector<string> removeBlankLines(const vector<string> &lines)
