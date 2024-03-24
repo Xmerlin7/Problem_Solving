@@ -7,7 +7,6 @@ bool isDelimiter(char c)
 {
     return c == ' ' || c == '!' || c == '.' || c == '?' || c == ',';
 }
-
 int countWords(string S)
 {
     int wordCount = 0;
