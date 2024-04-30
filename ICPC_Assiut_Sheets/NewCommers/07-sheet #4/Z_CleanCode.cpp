@@ -1,85 +1,43 @@
-#include <iostream>
-#include <string>
-#include <sstream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-string removeSingleLineComments(string line)
-{
-    string result;
-    bool inSingleLineComment = false;
-    bool inBlockComment = false;
-
-    for (int i = 0; i < line.length(); i++)
-    {
-        if (!inSingleLineComment && !inBlockComment && line[i] == '/' && i + 1 < line.length() && line[i + 1] == '/')
-        {
-            // Start of a single-line comment
-            break;
-        }
-        else if (!inSingleLineComment && !inBlockComment && line[i] == '/' && i + 1 < line.length() && line[i + 1] == '*')
-        {
-            // Start of a block comment
-            inBlockComment = true;
-            i++;
-        }
-        else if (!inSingleLineComment && inBlockComment && line[i] == '*' && i + 1 < line.length() && line[i + 1] == '/')
-        {
-            // End of a block comment
-            inBlockComment = false;
-            i++;
-        }
-        else if (!inSingleLineComment && !inBlockComment)
-        {
-            result += line[i];
-        }
-    }
-
-    return result;
-}
-
-// Function to remove blank lines and lines consisting of only spaces
-vector<string> removeBlankLines(const vector<string> &lines)
-{
-    vector<string> cleanedLines;
-
-    for (const string &line : lines)
-    {
-        if (line.find_first_not_of(' ') != string::npos)
-        {
-            cleanedLines.push_back(line);
-        }
-    }
-
-    return cleanedLines;
-}
-
 int main()
 {
-    vector<string> sourceCode;
+
     string line;
-
-    // Read the source code line by line
+    int open = 1;
     while (getline(cin, line))
-    {
-        sourceCode.push_back(line);
+    {   // #include<iostream>
+        //
+        bool flag = 0;
+        if (line.size() == 0 || line == " ")
+        {
+            continue;
+        }
+        for (int i = 0; i < line.length(); i++)
+        {
+            if (line[i] == '/' && line[i + 1] == '/' && open)
+            {
+                break;
+            }
+            else if (line[i] == '/' && line[i + 1] == '*')
+            { // i = 3
+                i++;
+                open = 0;
+            }
+            else if (line[i] == '*' && line[i + 1] == '/' && !open)
+            { // i = 3
+                i++;
+                open = 1;
+            }
+            else if (open == 1)
+            {
+                cout << line[i];
+                flag = 1;
+            }
+        }
+        if (flag && open == 1)
+        {
+            cout << endl;
+        }
     }
-
-    // Remove single-line comments and block comments
-    for (int i = 0; i < sourceCode.size(); i++)
-    {
-        sourceCode[i] = removeSingleLineComments(sourceCode[i]);
-    }
-
-    // Remove blank lines and lines consisting of only spaces
-    sourceCode = removeBlankLines(sourceCode);
-
-    // Output the cleaned source code
-    for (const string &cleanedLine : sourceCode)
-    {
-        cout << cleanedLine << endl;
-    }
-
-    return 0;
 }
